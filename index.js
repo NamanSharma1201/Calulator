@@ -58,7 +58,7 @@ function evaluate(expression) {
         res = NaN;
         break;
       }
-      if (tokens[i] === "/" && tokens[i + 1] === 0) {
+      if (tokens[i] === "/" && Number(tokens[i + 1]) === 0) {
         res = NaN;
         break;
       }
